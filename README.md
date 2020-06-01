@@ -2,6 +2,8 @@
 
 Contributor: **@Nelyo#1462** and **@SUP2Ak#2222**
 
+Converted to English (I think?) by Success (github.com/rjmxtechnology)
+
 # How to:
  - Import the SQL file for create both item and add them to shop
  - Put esx_diving in [esx] folder

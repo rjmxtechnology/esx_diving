@@ -7,17 +7,17 @@ Citizen.CreateThread(function()
   end
 end)
 
-------------- Light Diving suit
-RegisterNetEvent('esx_tenues:settenueplongee')
-AddEventHandler('esx_tenues:settenueplongee', function()
-	if UseTenu then
+------------- Light Diving Suit (dsuit1)
+RegisterNetEvent('esx_diving:setdivingsuit')
+AddEventHandler('esx_diving:setdivingsuit', function()
+	if use_dsuit then
 
 		TriggerEvent('skinchanger:getSkin', function(skin)
 
     		if skin.sex == 0 then
         		local clothesSkin = {
             		['tshirt_1'] = 15, ['tshirt_2'] = 0,
-			['ears_1'] = -1, ['ears_2'] = 0,
+					['ears_1'] = -1, ['ears_2'] = 0,
             		['torso_1'] = 15, ['torso_2'] = 0,
             		['decals_1'] = 0,  ['decals_2']= 0,
             		['mask_1'] = 36, ['mask_2'] = 0,
@@ -26,15 +26,15 @@ AddEventHandler('esx_tenues:settenueplongee', function()
             		['shoes_1'] = 34, ['shoes_2'] = 0,
             		['helmet_1'] 	= 8, ['helmet_2'] = 0,
             		['bags_1'] = 43, ['bags_2'] = 0,
-			['glasses_1'] = 6, ['glasses_2'] = 0,
-			['chain_1'] = 0, ['chain_2'] = 0,
+					['glasses_1'] = 6, ['glasses_2'] = 0,
+					['chain_1'] = 0, ['chain_2'] = 0,
             		['bproof_1'] = 0,  ['bproof_2'] = 0
         		}
         		TriggerEvent('skinchanger:loadClothes', skin, clothesSkin)
     		else
         		local clothesSkin = {
             		['tshirt_1'] = 15, ['tshirt_2'] = 0,
-			['ears_1'] = -1, ['ears_2'] = 0,
+					['ears_1'] = -1, ['ears_2'] = 0,
             		['torso_1'] = 15, ['torso_2'] 	= 0,
             		['decals_1'] = 0,  ['decals_2'] = 0,
             		['mask_1'] = 36, ['mask_2'] 	= 0,
@@ -43,8 +43,8 @@ AddEventHandler('esx_tenues:settenueplongee', function()
             		['shoes_1'] = 35, ['shoes_2'] 	= 0,
             		['helmet_1']= -1, ['helmet_2'] 	= 0,
             		['bags_1'] = 43, ['bags_2']	= 0,
-			['glasses_1'] = 5, ['glasses_2'] = 0,
-			['chain_1'] = 0, ['chain_2'] = 0,
+					['glasses_1'] = 5, ['glasses_2'] = 0,
+					['chain_1'] = 0, ['chain_2'] = 0,
             		['bproof_1'] = 0,  ['bproof_2'] = 0
         		}
         		TriggerEvent('skinchanger:loadClothes', skin, clothesSkin)
@@ -68,22 +68,22 @@ AddEventHandler('esx_tenues:settenueplongee', function()
 		end)
 	end
 
-	UseTenu  = not UseTenu
+	use_dsuit  = not use_dsuit
 	GUI.Time = GetGameTimer()
 
 end)
 
-------------- Best Diving suit
-RegisterNetEvent('esx_tenues:settenueplongee')
-AddEventHandler('esx_tenues:settenueplongee', function()
-	if UseTenu then
+------------- Heavy-Duty Diving Suit (dsuit2)
+RegisterNetEvent('esx_diving:setdivingsuit')
+AddEventHandler('esx_diving:setdivingsuit', function()
+	if use_dsuit then
 
 		TriggerEvent('skinchanger:getSkin', function(skin)
 
     		if skin.sex == 0 then
         		local clothesSkin = {
             		['tshirt_1'] 	= 15, ['tshirt_2'] = 0,
-			['ears_1'] = -1, ['ears_2'] = 0,
+					['ears_1'] = -1, ['ears_2'] = 0,
             		['torso_1'] 	= 15, ['torso_2'] = 0,
             		['decals_1'] 	= 0,  ['decals_2'] = 0,
             		['mask_1'] 		= 36, ['mask_2'] = 0,
@@ -92,15 +92,15 @@ AddEventHandler('esx_tenues:settenueplongee', function()
             		['shoes_1'] 	= 34, ['shoes_2'] = 0,
             		['helmet_1'] 	= 8, ['helmet_2'] = 0,
             		['bags_1']		= 43, ['bags_2'] = 0,
-			['glasses_1'] = 6, ['glasses_2'] = 0,
-			['chain_1'] = 0, ['chain_2'] = 0,
+					['glasses_1'] = 6, ['glasses_2'] = 0,
+					['chain_1'] = 0, ['chain_2'] = 0,
             		['bproof_1'] 	= 0,  ['bproof_2'] 	= 0
         		}
         		TriggerEvent('skinchanger:loadClothes', skin, clothesSkin)
     		else
         		local clothesSkin = {
             		['tshirt_1'] 	= 15, ['tshirt_2'] = 0,
-			['ears_1'] = -1, ['ears_2'] = 0,
+					['ears_1'] = -1, ['ears_2'] = 0,
             		['torso_1'] = 15, ['torso_2'] = 0,
             		['decals_1'] = 0,  ['decals_2'] = 0,
             		['mask_1'] = 36, ['mask_2'] = 0,
@@ -109,8 +109,8 @@ AddEventHandler('esx_tenues:settenueplongee', function()
             		['shoes_1'] = 35, ['shoes_2'] = 0,
             		['helmet_1'] = -1, ['helmet_2']	= 0,
             		['bags_1'] = 43, ['bags_2'] = 0,
-			['glasses_1'] = 5, ['glasses_2'] = 0,
-			['chain_1'] = 0, ['chain_2'] = 0,
+					['glasses_1'] = 5, ['glasses_2'] = 0,
+					['chain_1'] = 0, ['chain_2'] = 0,
             		['bproof_1'] = 0,  ['bproof_2'] = 0
         		}
         		TriggerEvent('skinchanger:loadClothes', skin, clothesSkin)
@@ -134,7 +134,7 @@ AddEventHandler('esx_tenues:settenueplongee', function()
 		end)
 	end
 
-	UseTenu  = not UseTenu
+	use_dsuit  = not use_dsuit
 	GUI.Time = GetGameTimer()
 
 end)
